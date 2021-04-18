@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/2403hatching-chick_1f423.ico" type="image/x-icon">
+    <title>Botão Par</title>
+</head>
+<body>
+    <nav>
+    <h1>Matemática é difícil e chata?!?</h1>
+    <h3>Só que não...</h2>
+    <h2>Brincadeira do BOTÃO PAR</h2>
+    <p>O tempo que aprender matemática era um bicho de sete cabeças já se foi. Hoje vamos aprender de uma forma divertida como identificar um número PAR.</p>
+    <p>Sem mais blá, blá, blá, vamos ao que interessa. Para saber se o número é PAR basta dividí-lo por 2. Se o resultado for exato, ou seja, não sobrar nada... Bingo, o número é PAR.</p>
+    <p>Vamos ver na prática como isso funciona?</p>
+    <p>A brincadeira é muito simples. Clique no BOTÃO PAR abaixo e vamos começar.</p>
+    <button type="button" onclick="par()" value="Botão Par">Botão Par</button>
+     <script>
+        a=[]
+          function par() {
+            n=parseInt(prompt("Digite um número de 1 a 20:"))
+            while(isNaN(n) || n < 1 || n >20){
+                alert('Número inválido!')
+                n=parseInt(prompt("Digite um número de 1 a 20:"))
+            } 
+            for(cont=0; cont<n; cont++){
+              a[cont] = 2*(cont+1);
+            }
+              alert(`Os ${n} primeiros números pares são: ${a}.`);
+            while(a.length){
+              a.pop();
+            }
+          }           
+     </script>
+    </nav>    
+</body>
+</html>
